@@ -2,32 +2,52 @@
 <html>
 	<head>
 		<title>William Shaw || Web Developer</title>
-
 		<!-- CSS AND FONTS -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<!-- JS AND LIBRARIES  -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+		<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 		<script type="text/javascript" src="js/page.js"></script>
-
 	</head>
 	<body>
 		<div class="info-container">
 		</div>
 		<div class="nav">
-		<ul class="bmenu">
-			<li><a class="about" href="#">About</a></li>
-			<li><a class="projects" href="#">Personal Projects</a></li>
-			<li><a class="photos" href="#">Photography</a></li>
-			<li><a class="contact"href="#">Contact</a></li>
-		</ul>
-	</div>
-
-
-	<!-- TEMPLATES -->
+			<ul class="bmenu">
+				<li><a class="about" href="#">About</a></li>
+				<li><a class="projects" href="#">Personal Projects</a></li>
+				<li><a class="photos" href="#">Photography</a></li>
+				<li><a class="contact"href="#">Contact</a></li>
+			</ul>
+		</div>
+		<!-- TEMPLATES -->
+		
+		<template id="about-me-temp">
+		<div class="about-me">
+			<h1>{{name}}</h1>
+			<img src="images/profile.jpg">
+			<p>{{about}}</p>
+		</div>
+		</template>
+		
+		<template id="photos-temp">
+			<div id="slideshow">
+				<img src="Images/bgphoto.jpg" />
+				<img src="Images/brooklyn_bridge.jpg" />
+				<img src="Images/chess.jpg" />
+				<img src="Images/church.jpg" />
+				<img src="Images/cups.jpg" />
+				<img src="Images/botanical.jpg" />
+				<img src="Images/jon_brit.jpg" />
+				<img src="Images/liberty.jpg" />
+				<img src="Images/windsor.jpg" />
+				<img src="Images/madison_sq.jpg" />
+			</div>
+		</template>
 
 	</body>
 </html>

@@ -1,9 +1,29 @@
 html { 
-  background: url('../images/bgphoto.jpg') no-repeat center center fixed; 
+  background: url('../images/grand_central.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-me {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+}
+
+.about-me img {
+	height: 35%;
+	width: 35%;
+	border-radius: 50%;
+}
+
+#slideshow img {
+	height: 90vh;
+	width: 50vw;
+	border-radius: 15px;
 }
 
 .info-container {
@@ -12,8 +32,9 @@ html {
 	text-align: center;
 	border-radius: 15px;
 	height: 90vh;
-	width: 60vw;
-	margin: 10px 10px;
+	width: 50vw;
+	margin-left: 40px;
+	margin-top: 10px;
 	float: left;
 	background-color: rgba(244, 240, 234, 0.4);
 }
@@ -33,7 +54,6 @@ html {
 }
 
 .bmenu li a{
-	font-family: 'Abril Fatface', cursive;
 	text-decoration: none;
 	white-space: nowrap;
 	color: transparent;
