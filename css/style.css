@@ -1,58 +1,36 @@
 html { 
   font-family: 'Source Sans Pro', sans-serif;
+  background-image: url('../images/bg.jpg');
 }
 
-.about-me {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	overflow: scroll;
-}
 
-.about-me img {
-	height: 40%;
-	width: 35%;
-	border-radius: 50%;
-}
-
-#slideshow img {
-	height: 100vh;
-	width: 69.5vw;
-}
-
-.info-container {
-	visibility: hidden;
-	display: block;
-	text-align: center;
-	height: 100vh;
-	width: 69.5vw;
-	float: left;
-	background-color: rgba(244, 240, 234, 0.4);
-}
-
+/*NAVIGATION BAR*/
 .nav {
-	display: block;
-	height: 100vh;
-	width: 30vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 10vh;
+	width: 100vw;
+	z-index: 9999;
 	background-color: black;
-	border-left: 5px solid white;
-	float: right;
 	font-size: 30px;
 }
 
 .bmenu {
-  list-style-type: none;
-  overflow: hidden;
-  margin-top: 30%;
-  text-align: left;
+	position: relative;
+	text-align: center;
+}
+
+.bmenu li {
+	display: inline;
 }
 
 .bmenu li a{
 	text-decoration: none;
 	white-space: nowrap;
 	color: transparent;
-	display: block;
 	text-transform: uppercase;
+	display: inline-block;
 	text-align: center;
 	text-shadow: 0px 0px 6px #fff;
 	letter-spacing: 1px;
@@ -68,9 +46,8 @@ html {
 	transition: all 0.6s linear;
 }
 
-.bmenu:hover li a{
-	text-shadow: 0px 0px 15px #fff;
-}
+.bmenu:hover li a{ text-shadow: 0px 0px 15px #fff; }
+
 .bmenu li a:hover{
 	text-shadow: 0px 0px 1px #fff;
 	-moz-transform: scale(1); 
@@ -79,3 +56,27 @@ html {
 	-webkit-transform: scale(1); 
 	transform: scale(1); 
 }
+
+
+
+.polaroid { width:368px; height:376px; background-image:url(../images/polaroid-bg.png); position:absolute; }
+.polaroid img { width:335px; height:275px; margin:25px 0 0 15px; }
+.polaroid p { text-align:center; font-family:Georgia,serif; font-size:20px; color:#2E2E2E; margin-top:15px; }
+
+
+
+.about-me { position: relative; height: 100%; width: 100%; overflow: scroll; color: white; font-size: 30px;}
+.about-me img { height: 35%; width: 15%; border-radius: 50%; }
+
+
+.info-container {
+	visibility: hidden;
+	display: block;
+	text-align: center;
+	margin-top: 10vh;
+	height: 90vh;
+	width: 100vw;
+	float: left;
+}
+
+
