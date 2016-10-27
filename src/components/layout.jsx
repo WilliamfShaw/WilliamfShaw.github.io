@@ -9,26 +9,15 @@ class Layout extends Component {
   render() {
     return (
       <div>
-        <div className="side-nav">
-          <ul>
-            <li>
-              <Link to="/" className="about-link">About</Link>
-            </li>
-            <li>
-              <Link to="/portfolio" className="about-link">Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/resume" className="about-link">Resume</Link>
-            </li>
-            <li>
-              <Link to="/contact" className="about-link">Contact</Link>
-            </li>
-          </ul>
+        <div className="main">
+          <div className="main__content">
+            {this.props.children}
+          </div>
         </div>
-        <div className="top-placeholder">
-        </div>
-        <div className="main-content">
-          {this.props.children}
+        <div className="footer">
+          <Link className="footer__link" to="/">About</Link>
+          <Link className="footer__link" to="/portfolio">Portfolio</Link>
+          <Link className="footer__link" to="/contact">Contact</Link>
         </div>
       </div>
     );

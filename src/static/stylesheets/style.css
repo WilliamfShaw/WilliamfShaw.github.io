@@ -1,44 +1,64 @@
-.side-nav {
-  height: 100%;
-  position: fixed;
-  width:12rem;
-  border-right: 3px solid black;
-  box-sizing: border-box;
-  text-align: center;
+body {
+  background-color: #fafafa;
+  background: url('https://s15.postimg.org/48gqft9iz/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-  .side-nav ul {
-    position: relative;
-    top: 7rem;
-    right: 1rem;
+.main, .footer {
+  position: fixed;
+}
+
+h2, .footer__link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+p, li {
+  font-family: 'Lusitana', serif;
+  font-size: 1.2rem;
+}
+
+.main, .footer, .about__skills__chart {
+  width: 50%;
+}
+
+.main {
+  top: 0;
+  left: 0;
+  height: 89%;
+  padding: .5rem 0 0 2rem;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  padding-left: 2rem;
+}
+
+  .footer__link:first-child {
+    padding-left: 1rem;
   }
 
-  .side-nav ul li {
-    list-style: none;
-  }
-
-  .side-nav ul li a {
-    font-size: 1.2rem;
-    line-height: 2rem;
+  .footer__link {
+    font-style: bold;
+    color: #000000;
+    font-size: 2.5rem;
     text-decoration: none;
-    color: black;
+    padding-left: 4rem;
   }
 
-.top-placeholder {
-  position: fixed;
-  left: 12.5rem;
-  width: 100%;
-  height: 7rem;
-  border-bottom: 3px solid black;
-  box-sizing: border-box;
+  .footer__link:hover {
+    color: #839EDC;
+  }
+
+.about__skills__chart {
+  height: 16rem;
 }
 
-.main-content {
-  background-color: green;
-  position: fixed;
-  top: 7.53rem;
-  left: 12.5rem;
-  height: 100%;
-  width: 100%;
-  background: green;
+.about__facts__list {
+  list-style: none;
 }
